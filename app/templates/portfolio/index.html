@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Bienvenido
+{% endblock %}
+
+{% block content %}
+    <div class="hero">
+        <div class="hero-content">
+            <div class="left">
+                <h1>Soy Desarrollador</h1>
+                <h1>Esteban Ficetti</h1>
+                <p>Desarrollo aplicaciones en python dinámicas utilizando bases de datos relacionales. A la vez que aplicaciones Android & IOS gracias a flutter</p>
+                <a href="#contacto" class="btn">Contáctame!</a>
+            </div>
+            <div class="right">
+                <img src="{{ url_for('static', filename='big-data.png') }}" width="600px" >
+            </div>
+        </div>
+    </div>
+{% include 'portfolio/section-firts.html' %}
+{% include 'portfolio/section-second.html' %}
+{% include 'portfolio/section-third.html' %}
+{% endblock %}
